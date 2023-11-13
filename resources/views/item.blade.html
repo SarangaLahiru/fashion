@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApparelLK</title>
+    <link rel="icon" href="/public/images/Untitled-4.png">
+    <link rel="stylesheet" href="/public/css/item.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+        
+    <div class="container">
+
+        <div class="cart">
+            <div class="box1 bb">
+    
+            </div>
+            <div class="box aa">
+                <h1>Your Shopping Cart <a href="" id="cancle"><i class="fa fa-times" aria-hidden="true"></i></a></h1>
+                  
+                <table>
+                    <?php
+
+                    $data=DB::table('kevin')->get();
+                    $count=DB::table('kevin')->count();
+
+                    foreach($data as $datas){
+
+                      echo "<tr>
+
+                        <td>".$datas->id." ".$datas->items."<span>$".$datas->total."</span></td>
+                        
+
+                       <tr>";
+                        
+                        
+
+                    }
+                    
+
+                    ?>
+                    
+                </table>
+            </div>
+           
+        </div>
+        <div class="header">
+            <span class="user">
+                <h3>Hi!</h3>
+                <h1><span>K</span></h1>
+            </span>
+            <h2><img src="/public/images/Untitled-12.png" alt=""></h2>
+            <div class="box">
+                <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                <a href="" id='log'>Log in</a>
+                <a href="" id="cart"><i class="fa fa-shopping-bag" aria-hidden="true"></i><span><?php echo $count;?></span></a>
+            </div>
+        </div>
+        <header class="h1">
+    
+            <li><a href="" id="text">HOME</a></li>
+            <li><a href="">COllECTION</a></li>
+            <li><a href="">FEATURES</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">ABOUT US</a></li>
+        </header>
+    <div class="container1">
+        <div class="body">
+            <img class="bimg" src="/public/images/img/Untitled-1.png" alt="">
+            
+           
+        </div>
+        <div class="legs">
+            
+            <img class="limg" src="/public/images/img/Untitled-8.png" alt="">
+            
+        </div>
+    </div>
+    <div class="boxc boxcb">
+        <div class="bb b1"></div>
+        <div class="bb b2"></div>
+        <div class="bb b3"></div>
+        <div class="bb b4"></div>
+    </div>
+    <div class="boxc boxl boxl1">
+        <div class="bb b1"></div>
+        <div class="bb b2"></div>
+        <div class="bb b3"></div>
+        <div class="bb b4"></div>
+    </div>
+
+    <div class="dis">
+        <div class="box">
+            <h2>Men clothes</h2>
+            <span>Stripe Suite blazer</span>
+            <p>Men's suiting is finally reaching an all time high in trends, with new patterns such as the windowpane, plaid, and
+                checked suits, and new textures too! We got…</p>
+                
+            <h3>$100</h3>
+            
+            <a href="" id="seem">See more</a>
+        </div>
+       
+    </div>
+    <div class="bdis">
+    
+        <div class="box2">
+            <h2>Men Suit Collection</h2>
+            <h3>suit</h3>
+            <div class="box3">
+                <form action="{{route('cart')}}" method="post">
+                    @csrf
+                    <span class="color">
+                        <h2>Color</h2>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </span>
+                    <span class="size">
+                        <h2>Size</h2>
+                        <p><span>S</span></p>
+                        <p><span>M</span></p>
+                        <p><span>L</span></p>
+                        <p><span>XL</span></p>
+                        
+                    </span>
+                    <span class="count">
+                        <h2>Quantity</h2>
+                        <input type="number" value="1" name="count">
+                    </span>
+                    <span class="btns">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <p>$80.00</p>
+
+
+                        
+                         
+                         <input type="hidden" value="80" name="price">
+                         <input type="hidden" value="Men Suit Collection" name="item">
+                         <input type="submit" value="Add to cart">
+                        
+                       
+
+                    </span>
+                    
+                </form>
+            </div>
+        </div>
+    
+    </div>
+   
+</body>
+<script src="/public/js/item.js"></script>
+</html>

@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(197, 218, 236);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: black;
+    line-height: 1.6em;
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+    
+
+}
+
+.header #cart{
+    font-size: 30px;
+    
+    padding: 10px 15px;
+    border-radius: 50px;
+    
+}
+.header #cart:hover{
+    background-color: rgba(240, 248, 255, 0.432);
+}
+.header #cart:active {
+    background-color: rgb(247, 248, 250);
+}
+
+.header h2{
+    flex-basis: 45%;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+    
+    padding: 10px 15px;
+    
+
+}
+.header li{
+    list-style: none;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(108, 52, 212, 0.781);
+    filter: blur(120px);
+    position: absolute;
+}
+.a1{
+    left: 260px;
+    background-color: rgb(35, 161, 245);
+}
+.a2{
+    left: -140px;
+    top: -20px;
+}
+.a3 {
+    left: 10px;
+    top: 300px;
+    background-color: rgb(91, 172, 226);
+    filter: blur(120px);
+}
+.a4 {
+    left: 800px;
+    top: 30px;
+    background-color: rgb(243, 213, 189);
+    filter: blur(120px);
+}
+.a5 {
+    left: 600px;
+    top: 300px;
+    background-color: rgb(243, 213, 189);
+    filter: blur(120px);
+}
+.a5 {
+    left: 1000px;
+    top: 300px;
+    background-color: rgb(88, 211, 241);
+    filter: blur(120px);
+}
+.a6 {
+    left: 1200px;
+    top: -300px;
+    background-color: rgb(129, 94, 194);
+    filter: blur(120px);
+}
+.a7 {
+    left: 1250px;
+    top: 150px;
+    background-color: rgba(238, 238, 240, 0.644);
+    filter: blur(0px);
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+   
+}
+.slide{
+    position: relative;
+    top: 120px;
+    left: 100px;
+    color: white;
+    font-size: 40px;
+    width: 500px;
+    line-height: 2em;
+}
+.slide li{
+    list-style: none;
+}
+.slide a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-size: 25px;
+    
+}
+.slide #box{
+    line-height: 1em;
+    left: 20px;
+    position: relative;
+    top: 50px;
+    
+}
+.slide #more{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 250px;
+    color: black;
+    padding: 24px 15px;
+    border-radius: 150px;
+    top: -180px;
+    font-size: 15px;
+}
+.slide #men{
+    background:linear-gradient(to left ,rgba(79, 116, 238, 0.658),rgba(67, 67, 223, 0.664),rgba(174, 0, 255, 0.76));
+    color: rgb(255, 255, 255);
+    padding: 50px 15px;
+    width: 50px;
+    border-radius: 100px;
+    position: relative;
+    left: 850px;
+    top: -300px;
+}
+.slider img{
+    position: absolute;
+    transform:scale(1.1);
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+.slider{
+    position: relative;
+    top: -500px;
+    left: 320px;
+    width: 100%;
+    
+}
+.slider .curr{
+    opacity: 1;
+}
+.cartBox{
+    width: 500px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.315);
+    backdrop-filter: blur(20px);
+    top: 0px;
+    left: 1350px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in;
+}
+.cart1{
+    left: 860px;
+    
+}
+.cartBox .cbtn{
+    position: relative;
+    left: 20px;
+    top: 15px;
+    font-size:25px;
+    color: black;
+    
+    border-radius: 200px;
+    padding: 10px 15px;
+}
+.cartBox .cbtn:hover{
+    background-color: rgba(240, 248, 255, 0.541);
+
+}
+.cartBox .cbtn:active {
+    background-color: aliceblue;
+
+}

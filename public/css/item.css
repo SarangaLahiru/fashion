@@ -1,0 +1,735 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container .cart {
+
+
+    position: absolute;
+    z-index: 10000;
+    left: -800px;
+
+
+}
+
+.container .cart .box1 {
+    position: absolute;
+    width: 2500px;
+    height: 100vh;
+    visibility: visible;
+
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.container .cart .bb {
+    visibility: hidden;
+
+}
+
+.container .cart .box {
+
+    left: 1750px;
+    position: relative;
+    top: -20px;
+    width: 400px;
+    height: 100vh;
+
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    transition: all 0.5s ease;
+}
+
+.container .cart .aa {
+    left: 2500px;
+}
+
+.container .cart1 {
+    position: absolute;
+    z-index: 1000;
+    left: 1500px;
+}
+
+.container .cart a {
+    text-decoration: none;
+    color: black;
+    margin: 10px 15px;
+}
+
+.container .cart h1 {
+
+    margin-top: 20px;
+    margin-left: 50px;
+    position: relative;
+    top: 25px;
+}
+
+.container .cart h1 a {
+
+    padding: 5px 10px;
+    position: relative;
+    left: 20px;
+    top: 0px;
+    border-radius: 100px;
+}
+
+.container .cart h1 a:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+.container .h2 {
+    position: fixed;
+    z-index: 10000;
+    top: 0px;
+    background-color: white;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px rgb(112, 112, 112) solid;
+
+    background-color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header h2 {
+    position: relative;
+    left: 600px;
+    top: 10px;
+    font-size: 50px;
+    color: rgb(24, 23, 23);
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(19, 18, 18);
+}
+
+.header .box {
+    display: flex;
+    align-items: center;
+
+}
+
+.header .box {
+    position: absolute;
+    left: 1100px;
+    top: 2px;
+
+}
+
+.header .box a {
+    margin: 10px 10px;
+    font-size: 18px;
+
+}
+
+.header #cart {
+    font-size: 20px;
+}
+
+.header #cart i {
+    font-size: 25px;
+    padding: 9px 12px;
+    border-radius: 100px;
+    color: #ffffff;
+    background-color: rgb(28, 29, 29);
+
+
+}
+
+.header #log {
+    padding: 8px 15px;
+
+    color: rgb(255, 255, 255);
+    border-radius: 24px;
+    background-color: rgb(7, 7, 7);
+}
+
+.header #log:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(17, 17, 17);
+    box-shadow: 0px 0px 10px black;
+}
+
+.header #cart i:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(19, 18, 18);
+    box-shadow: 0px 0px 10px black;
+}
+
+.header #cart span {
+    background-color: red;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 100px;
+    font-size: 14px;
+    position: relative;
+    top: -20px;
+    left: -15px;
+}
+.header .user h1 {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    background-color: rgb(108, 178, 224);
+    padding: 8px 14px;
+    width: 18px;
+    position: relative;
+    left: 52px;
+    top: -20px;
+    border-radius: 100px;
+    color: white;
+}
+
+.header .user {
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: 100px;
+    border-radius: 100px;
+    height: 50px;
+    top: 7px;
+    left: 40px;
+}
+
+.header .user h3 {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    
+}
+
+.container {
+    width: 100%;
+    height: 120vh;
+    background: linear-gradient(to left,rgb(70, 160, 70),white);
+
+}
+
+header li {
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 60px;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    border-bottom: 1px rgb(95, 95, 95) solid;
+}
+
+header h2 {
+    flex-basis: 45%;
+}
+
+.header h2 img {
+    width: 250px;
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    z-index: 1000;
+
+
+
+}
+
+.header::before {
+    content: '';
+    width: 280px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.021);
+
+    position: absolute;
+    top: 20px;
+    left: 40px;
+
+}
+
+.header h2 span {
+    margin-left: -30px;
+}
+.container1{
+    transform: scale(0.3);
+    position: relative;
+    left: 80px;
+    top: 20px;
+    transition: all 0.5s ease;
+}
+.container1 .body img{
+    position: absolute;
+    
+
+}
+.container1 .legs img{
+    position: absolute;
+    
+}
+.container1 .legs{
+    position: relative;
+    top: 936px;
+    left: 122px;
+    z-index: -1;
+    transform: scale(1.1);
+}
+ .boxc{
+    position: absolute;
+    left: 1200px;
+    top: 1200px;
+    transition: all 0.5s ease;
+    transform: scale(0.4);
+}
+ .boxc .bb{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: antiquewhite;
+    position: absolute;
+    border: 5px white solid;
+    transition: all 0.5s ease;
+
+}
+.boxc .bb:active{
+    background-color: white;
+    box-shadow: 0px 0px 10px black ;
+}
+.boxc .b1 {
+    background-color: green;
+    top: 50px;
+}
+
+ .boxc .b2 {
+    background-color: rgb(128, 0, 107);
+    top: 100px;
+}
+
+ .boxc .b3 {
+    background-color: rgb(128, 26, 0);
+    top: 150px;
+}
+
+.boxc .b4 {
+    background-color: rgb(0, 34, 128);
+    top: 200px;
+}
+
+ .boxc{
+    position: absolute;
+    left: 950px;
+    top: 450px;
+    
+
+}
+
+.container1 .box1 .aa{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: antiquewhite;
+
+}
+.container1 .box1 .l1 {
+    background-color: green;
+}
+.container1 .box1 .l2 {
+    background-color: rgb(128, 0, 107);
+}
+.container1 .box1 .l3 {
+    background-color: rgb(128, 26, 0);
+}
+.container1 .box1 .l4 {
+    background-color: rgb(0, 34, 128);
+}
+.curr{
+    top: 380px;
+}
+.boxc1 {
+    top: 380px;
+    
+   
+}
+.boxl .bb{
+    transition: all 0.5s ease;
+}
+.boxl{
+    visibility: hidden;
+    top: 450px;
+    
+}
+.boxl2{
+    visibility: visible;
+    top: 380px;
+}
+
+.curr .b1 {
+   
+    top: -100px;
+}
+
+.curr .b2 {
+    
+    top: 50px;
+}
+
+.curr .b3 {
+   
+    top: 200px;
+}
+
+.curr .b4 {
+    
+    top: 350px;
+}
+
+.boxl2 .b1 {
+
+    top: -100px;
+}
+
+.boxl2 .b2 {
+
+    top: 50px;
+}
+
+.boxl2 .b3 {
+
+    top: 200px;
+}
+
+.boxl2 .b4 {
+
+    top: 350px;
+}
+.curr1{
+    transform: scale(0.5);
+    left: 120px;
+}
+.curr2 {
+    transform: scale(0.5);
+    left: 120px;
+    top: -500px;
+}
+
+.dis{
+    
+    width: 250px;
+    margin-left:150px;
+    margin-top: 0px;
+    font-size: 30px;
+    background-color: rgba(31, 160, 27, 0.377);
+    padding: 10px 15px;
+    backdrop-filter: blur(20px);
+    height: 500px;
+    animation: anim1 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    
+}
+.dis .box{
+    position: absolute;
+    width: 250px;
+}
+@keyframes anim1{
+    0%{
+        width: 0px;
+        opacity: 1;
+
+    }
+    100%{
+        width: 250px;
+        opacity: 1;
+
+    }
+}
+.dis .box{
+    position: absolute;
+    top: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.dis h2{
+    font-size: 30px;
+
+}
+.dis span {
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+
+}
+.dis p {
+    font-size: 14px;
+    position: relative;
+    top: 50px;
+    
+
+}
+.dis h3 {
+    position: relative;
+    top: 100px;
+    left: 0px;
+
+}
+.dis a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 60px;
+    font-size: 15px;
+    position: relative;
+    top: 150px;
+    left: 30px;
+}
+.detail{
+    animation: anim2 2s ;
+    animation-fill-mode: forwards;
+   
+}
+.detail1 {
+    animation: anim3 1s;
+    animation-fill-mode: forwards;
+    
+}
+.detail2 {
+    animation: anim3 1s;
+    animation-fill-mode: forwards;
+    
+}
+.detail3 {
+    animation: anim4 1s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes anim2{
+    0%{
+        opacity: 1;
+        filter: blur(50px);
+
+    }
+    100%{
+        left: -200px;
+        filter: blur(0px);
+
+    }
+}
+@keyframes anim3 {
+    0% {
+    
+        opacity: 1;
+
+    }
+
+    100% {
+        top: 550px;
+        opacity: 0;
+
+    }
+}
+
+@keyframes anim4 {
+    0% {
+
+       opacity: 1;
+       left: 0px;
+
+    }
+
+    100% {
+        opacity: 0;
+        left: -100px;
+
+    }
+}
+
+.bdis{
+    width: 650px;
+    height: 580px;
+    background-color: rgb(86, 182, 94);
+    position: absolute;
+   left: 1500px;
+   backdrop-filter: blur(20px);
+   top: 120px;
+}
+.detail4 {
+    animation: anim5 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes anim5 {
+    0% {
+
+        opacity: 1;
+        filter: blur(10px);
+        
+
+    }
+
+    100% {
+        opacity: 1;
+        left: 700px;
+        filter: blur(0px);
+
+    }
+}
+.bdis .box2{
+   position: absolute;    
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 30px;
+   left: -97px;
+   top:40px;
+}
+.bdis .box2 h3{
+    font-size: 25px;
+    margin-left: 180px;
+    color: rgb(206, 206, 206);
+    
+}
+.bdis .box2 >h2 {
+   
+    position: relative;
+    color: rgb(113, 204, 126);
+    left: 130px;
+
+}
+.bdis form h2{
+    font-size: 20px;
+    
+}
+.bdis .box3{
+    position: relative;
+    left: 150px;
+}
+.bdis .color p{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(168, 151, 129);
+    border-radius: 100px;
+    margin: 10px 10px;
+    position: relative;
+    left: 150px;
+    
+
+}
+.bdis .color{
+    display: flex;
+}
+.bdis .color h2{
+    position: relative;
+    top: 15px;
+}
+.bdis .size h2 {
+    position: relative;
+    top: 12px;
+}
+.bdis .count h2 {
+    position: relative;
+    top: 12px;
+}
+.bdis .size {
+    display: flex;
+}
+.bdis .size p{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(168, 151, 129);
+    border-radius: 100px;
+    margin: 10px 10px;
+    position: relative;
+    left: 162px;
+    font-size: 15px;
+    text-align: center;
+    
+
+
+}
+.bdis .size p span{
+    position: relative;
+    top:5px ;
+}
+.bdis .btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.bdis .count{
+    display: flex;
+}
+.bdis .count input{
+    position: relative;
+    left: 130px;
+    width: 50px;
+    height: 30px;
+    top: 10px;
+}
+.bdis form > span{
+    
+    margin: 10px 15px;
+    height: 50px;
+    border-bottom: 1px black solid;
+    
+}
+.bdis form .btns input[type="submit"]{
+    padding: 10px 15px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+.bdis form .btns input[type="submit"]:hover{
+    background-color: white;
+    color: black;
+
+}
+.bdis form .btns input[type="submit"]:active{
+    box-shadow: 0px 0px 10px black;
+}
+.bdis form .btns{
+    border: none;
+}
+.box table{
+    position: absolute;
+    top: 80px;
+    font-size: 20px;
+    left: 20px;
+    
+    
+
+}
+.box table tr td{
+    background-color: #a5a1a1;
+    width: 350px;
+    height: 50px;
+    border-radius: 12px;
+    padding: 10px 15px;
+    
+}
+.box table tr td span{
+    position: relative;
+    top: 0px;
+    left: 70px;
+}
